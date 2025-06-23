@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Shivam Dairy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Shivam Dairy Logo" class="logo" />
+      <div class="brand-text">
+        <h1>Shivam</h1>
+        <p>Dairy & Food Products</p>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="#">Products</a>
+      <a href="infrastructure.html">Infrastructure</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="production">Production</button>
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+      <button class="filter-btn" data-filter="interior">Interior</button>
+      <button class="filter-btn" data-filter="lab">Lab</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <img src="gallery/pro1.jpg" class="gallery-item production" alt="Production 1">
+      <img src="gallery/lab1.jpg" class="gallery-item lab" alt="Lab 1">
+      <img src="gallery/int1.jpg" class="gallery-item interior" alt="Interior 1">
+      <img src="gallery/ex1.jpg" class="gallery-item exterior" alt="Exterior 1">
+      <img src="gallery/pro2.jpg" class="gallery-item production" alt="Production 2">
+      <img src="gallery/lab2.jpg" class="gallery-item lab" alt="Lab 2">
+
+       <img src="gallery/int2.jpg" class="gallery-item interior" alt="Interior 1">
+       <img src="gallery/pro3.jpg" class="gallery-item production" alt="Production 1">
+        <img src="gallery/ex2.jpg" class="gallery-item exterior" alt="Exterior 1">
+        <img src="gallery/lab3.jpg" class="gallery-item lab" alt="Lab 1">
+         <img src="gallery/ex3.jpg" class="gallery-item exterior" alt="Exterior 1">
+
+         <img src="gallery/int3.jpg" class="gallery-item interior" alt="Interior 1">
+          <img src="gallery/pro4.jpg" class="gallery-item production" alt="Production 1">
+          <img src="gallery/int4.jpg" class="gallery-item interior" alt="Interior 1">
+          <img src="gallery/pro5.jpg" class="gallery-item production" alt="Production 1">
+          <img src="gallery/int5.jpg" class="gallery-item interior" alt="Interior 1">
+          <img src="gallery/pro6.jpg" class="gallery-item production" alt="Production 1">
+          <img src="gallery/pro7.jpg" class="gallery-item production" alt="Production 1">
+    </div>
+  </section>
+
+ <!-- Modal for full image -->
+<div class="image-modal" id="imageModal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg" />
+</div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>Shivam Dairy</h3>
+      <p>📍 plote no. 2 palitana road, Jesar, Bhavnagar, Gujarat 364510</p>
+      <p>☎ +91 7990175820</p>
+      <p>📧 **</p>
+      <p>⌛ Mon – Sat: 9:00 AM – 2:00 PM & 4:00 PM - 10:00 PM </p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shivam_milk_?igsh=MXU5NXo1aHd6aHVneg==" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="youtube">youtube</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Shivam Dairy. All rights reserved.</p>
+  </div>
+  <div class="footer-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4102.440777188027!2d71.67411257526618!3d21.373437480363563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2116f49b6c00b%3A0x79e797411bdfbb54!2sShivam%20Dairy%20Jesar!5e1!3m2!1sen!2sin!4v1749388913142!5m2!1sen!2sin""
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</footer>
+
+
+<!-- Load script last -->
+<script src="script.js" defer></script>
+</body>
+</html>
