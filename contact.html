@@ -34,7 +34,14 @@
   Our team is always ready to assist you with personalized support.
 </p>
 
-    <form name="contact" method="POST" data-netlify="true" action="contact.html#success" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify action="contact.html#success" class="contact-form">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <!-- Honeypot trap (hidden from users) -->
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
       <input type="hidden" name="form-name" value="contact" />
 
       <input type="text" name="name" placeholder="Your Name" required />
